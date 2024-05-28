@@ -1,0 +1,165 @@
+Microsoft Windows [Versión 10.0.22631.3296]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+"""
+INSTALACIÓN > pip install pylint
+EJECUCIÓN > C:\Users\Carlos\Desktop\Python\Pycharm>pylint ahorcado.py -r y
+"""
+
+
+######  INSTALACIÓN  ######
+
+C:\Users\Carlos>pip install pylint
+
+Requirement already satisfied: pylint in c:\users\carlos\anaconda3\lib\site-packages (2.16.2)
+Requirement already satisfied: platformdirs>=2.2.0 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (3.10.0)
+Requirement already satisfied: astroid<=2.16.0-dev0,>=2.14.2 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (2.14.2)
+Requirement already satisfied: isort<6,>=4.2.5 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (5.9.3)
+Requirement already satisfied: mccabe<0.8,>=0.6 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (0.7.0)
+Requirement already satisfied: tomlkit>=0.10.1 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (0.11.1)
+Requirement already satisfied: dill>=0.3.6 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (0.3.7)
+Requirement already satisfied: colorama>=0.4.5 in c:\users\carlos\anaconda3\lib\site-packages (from pylint) (0.4.6)
+Requirement already satisfied: lazy-object-proxy>=1.4.0 in c:\users\carlos\anaconda3\lib\site-packages (from astroid<=2.16.0-dev0,>=2.14.2->pylint) (1.6.0)
+Requirement already satisfied: wrapt<2,>=1.14 in c:\users\carlos\anaconda3\lib\site-packages (from astroid<=2.16.0-dev0,>=2.14.2->pylint) (1.14.1)
+
+C:\Users\Carlos>cd Escritorio
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\Carlos> cd Desktop
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\Carlos>cd Desktop
+
+C:\Users\Carlos\Desktop>cd Python
+
+C:\Users\Carlos\Desktop\Python>cd Pycharm
+
+######  EJECUCIÓN  ######
+
+C:\Users\Carlos\Desktop\Python\Pycharm>pylint ahorcado.py -r y
+
+************* Module Ahorcado
+ahorcado.py:35:0: C0301: Line too long (104/100) (line-too-long)
+ahorcado.py:127:0: C0301: Line too long (117/100) (line-too-long)
+ahorcado.py:128:0: C0301: Line too long (108/100) (line-too-long)
+ahorcado.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+ahorcado.py:1:0: C0103: Module name "Ahorcado" doesn't conform to snake_case naming style (invalid-name)
+ahorcado.py:8:0: C0116: Missing function or method docstring (missing-function-docstring)
+ahorcado.py:40:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+ahorcado.py:51:16: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+ahorcado.py:67:0: C0103: Constant name "new_game" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:147:0: W0120: Else clause on loop without a break statement, remove the else and de-indent all the code inside it (useless-else-on-loop)
+ahorcado.py:71:4: C0103: Constant name "vidas" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:72:4: C0103: Constant name "letra" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:77:10: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:134:4: W0120: Else clause on loop without a break statement, remove the else and de-indent all the code inside it (useless-else-on-loop)
+ahorcado.py:82:8: C0103: Constant name "check_letra" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:91:12: C0103: Constant name "letra" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:95:26: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:98:20: C0103: Constant name "check_letra" doesn't conform to UPPER_CASE naming style (invalid-name)
+ahorcado.py:101:22: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:112:26: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:113:26: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:119:26: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:131:22: W1309: Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+ahorcado.py:146:8: C0103: Constant name "new_game" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+
+######  REPORTE GENERADO  ######
+
+Report
+======
+87 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%bad-name |
++=========+=======+===========+===========+============+=========+
+|module   |1      |NC         |NC         |0.00        |100.00   |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |NC         |NC         |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |3      |NC         |NC         |66.67       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+150 lines have been analyzed
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |99     |66.00 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |19     |12.67 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |9      |6.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |23     |15.33 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |13     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |2      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |9      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++-------------------------------+------------+
+|message id                     |occurrences |
++===============================+============+
+|invalid-name                   |8           |
++-------------------------------+------------+
+|f-string-without-interpolation |7           |
++-------------------------------+------------+
+|line-too-long                  |3           |
++-------------------------------+------------+
+|useless-else-on-loop           |2           |
++-------------------------------+------------+
+|no-else-return                 |2           |
++-------------------------------+------------+
+|missing-module-docstring       |1           |
++-------------------------------+------------+
+|missing-function-docstring     |1           |
++-------------------------------+------------+
+
+
+
+
+-----------------------------------
+Your code has been rated at 7.24/10
